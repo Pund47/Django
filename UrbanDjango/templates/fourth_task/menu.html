@@ -1,0 +1,29 @@
+{% extends "fist_list.html" %}
+
+{% load static %}
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel = 'stylesheet' type = 'text/css' href = '{% static "style.css" %}'>
+</head>
+<body>
+    <h1>Главная страница</h1>
+
+    {% block buttons_shop %}
+    {{block.super}}
+    {% endblock %}
+
+    {% include 'fist_list.html' %}
+    {% include 'second_list.html' %}
+
+
+
+
+</body>
+</html>
