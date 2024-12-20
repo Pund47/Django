@@ -18,7 +18,9 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import  func_views,class_views
 from task4.views import header_page, fist_page, second_page, menu_page
-#from UrbanDjango.task2.views import  func_views,class_views
+
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,5 +29,4 @@ urlpatterns = [
     path('my_shop/', fist_page),
     path('basket/', second_page),
     path('menu/', header_page),
-
 ]

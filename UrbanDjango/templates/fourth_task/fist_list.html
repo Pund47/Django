@@ -6,20 +6,16 @@
 </head>
 <body>
 <h1> Автомобили </h1>
+<nav>
+{% block buttons_shop %}
 <ul>
-   {% block buttons_shop %}
      <p> <a>Ferrari <button> Купить</button></a>  </p>
      <p> <a>Lamborghini <button> Купить</button></a>  </p>
      <p> <a>Bicycle <button>Купить</button> </a>  </p>
      <p> <a href="/"><button>Вернуться</button></a></p>
-   {% endblock %}
-
-
-
-
 </ul>
-
-
+{% endblock %}
+</nav>
 
 
 
