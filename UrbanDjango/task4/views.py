@@ -11,5 +11,5 @@ def fist_page(request):
 def second_page(request):
     return render(request,'second_list.html')
 
-def menu_page(request):
-    return render(request,'menu.html')
+#def menu_page(request):
+#    return render(request,'menu.html')

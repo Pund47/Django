@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Магазин</title>
-</head>
-<body>
-<h1> Автомобили </h1>
-<nav>
+{% extends "menu.html" %}
+
+{% block title %} Магазин {% endblock title %}
+
+{% block navigations %}
+
+{% endblock navigations %}
+
 {% block buttons_shop %}
-<ul>
-     <p> <a>Ferrari <button> Купить</button></a>  </p>
-     <p> <a>Lamborghini <button> Купить</button></a>  </p>
-     <p> <a>Bicycle <button>Купить</button> </a>  </p>
-     <p> <a href="/"><button>Вернуться</button></a></p>
-</ul>
-{% endblock %}
-</nav>
+{{block.super}}
+{% endblock buttons_shop %}
 
-
-
-
-
-
-
-
-</body>
-</html>
+{% block basket %}
+<p> </p>
+{% endblock basket %}
