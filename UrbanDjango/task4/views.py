@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
+from django.http import HttpResponse
 
 # Create your views here.
 def header_page(request):
@@ -11,5 +12,4 @@ def fist_page(request):
 def second_page(request):
     return render(request,'second_list.html')
 
-#def menu_page(request):
-#    return render(request,'menu.html')
+
