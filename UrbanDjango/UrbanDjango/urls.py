@@ -17,17 +17,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 #from task2.views import  func_views,class_views
+from task3.views import header_page, fist_page, second_page
 #from task4.views import header_page, fist_page, second_page
-from fifth_task.views import sign_up_by_django, sign_up_by_html
+
+#from fifth_task.views import sign_up_by_django, sign_up_by_html
 
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-     path('',sign_up_by_html),
-#    path('',header_page),
+#     path('',sign_up_by_html),
+    path('',header_page),
 #    path('clas/',class_views.as_view()),
-#    path('my_shop/', fist_page),
-#    path('basket/', second_page),
+    path('my_shop/', fist_page),
+    path('basket/', second_page),
  ]
